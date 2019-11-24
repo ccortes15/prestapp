@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="./src/css/log_in.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Log In</title>
+    <title>Sign In</title>
 </head>
 <body>
     <div class="container h-100 mt-4">
@@ -29,33 +29,33 @@
                                 <span class="input-group-text justify-content-center"><i class="fa fa-user"></i></span>
 							    <input type="text" name="user" class="form-control input_user" value="">
                             </div>
-						</div>
-						<div class="mb-2">
-                            <label for="pass">Password</label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="user">E-mail</label>
+							<div class="input-group-append">
+                                <span class="input-group-text justify-content-center"><i class="fa fa-envelope"></i></span>
+							    <input type="email" name="email" class="form-control input_user" value="">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="user">Password</label>
 							<div class="input-group-append">
                                 <span class="input-group-text justify-content-center"><i class="fa fa-lock"></i></span>
-							    <input type="password" name="pass" class="form-control input_pass" value="">
+							    <input type="password" name="pass" class="form-control input_user" value="">
+                            </div>
+						</div>
+						<div class="mb-2">
+                            <label for="pass">Confirm Password</label>
+							<div class="input-group-append">
+                                <span class="input-group-text justify-content-center"><i class="fa fa-key"></i></span>
+							    <input type="password" name="cPass" class="form-control input_pass" value="">
                             </div>
 						</div>
 						<div class="form-group">
-							<div class="custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input" id="customControlInline">
-								<label class="custom-control-label" for="customControlInline">Remember me</label>
-							</div>
-						</div>
 							<div class="d-flex justify-content-center mt-3 login_container">
-				 	<button type="button" name="button" class="btn login_btn">Login</button>
-				   </div>
+                            <button type="button" name="button" class="btn login_btn">Sign In</button>
+                        </div>
 					</form>
-				</div>
-		
-				<div class="mt-4">
-					<div class="d-flex justify-content-center links">
-						Don't have an account? <a href="sign_in.html" class="ml-2">Sign Up</a>
-					</div>
-					<div class="d-flex justify-content-center links">
-						<a href="#">Forgot your password?</a>
-					</div>
 				</div>
 			</div>
 		</div>

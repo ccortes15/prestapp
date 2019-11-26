@@ -4,10 +4,13 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: #025a32 !important;
+    background: url('../../img/background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .user_card {
-    height: 85%;
+    height: 80%;
     width: 350px;
     margin-top: auto;
     margin-bottom: auto;
@@ -68,4 +71,20 @@ html {
 }
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #038999 !important;
+}
+
+/* .invalid class prevents CSS from automatically applying */
+.invalid input:required:invalid {
+    background: #BE4C54;
+  }
+  
+  /* Mark valid inputs during .invalid state */
+  .invalid input:required:valid {
+    background: #17D654;
+  }
+
+  .invalid-feedback{
+    background-color: red;
+    color: white;
+    margin-top: 0;
 }

@@ -3,6 +3,7 @@ function submit_by_id() {
     var pass = document.getElementById("pass").value;
     
     if(user && pass){
-        location.href = './index.html'
+        console.log(user + pass)
     }
+    
 }

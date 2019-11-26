@@ -7,13 +7,13 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="./src/css/sign_in.css">
+	<link rel="stylesheet" href="./src/css/sign_up.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Sign In</title>
 </head>
 <body>
-    <div class="container h-100 mt-5">
+    <div class="container h-100">
 		<div class="d-flex justify-content-center h-100">
 			<div class="user_card">
 				<div class="d-flex justify-content-center">
@@ -22,42 +22,53 @@
 					</div>
 				</div>
 				<div class="d-flex justify-content-center form_container">
-					<form class="needs-validation" novalidate>
+					<form action="log_in.html" class="needs-validation" novalidate>
 						<div class="mb-3">
-                            <label for="user">Usuario</label>
-							<div class="input-group-append">
-                                <span class="input-group-text justify-content-center"><i class="fa fa-user"></i></span>
-							    <input type="text" name="user" class="form-control" placeholder="Usuario" required>
-                            </div>
-                            
+                                <label for="user">Usuario</label>
+                                <div class="d-flex form-group">
+                                    <span class="flex-grow-1 input-group-text justify-content-center"><i class="fa fa-user"></i></span>
+                                    <input type="text" class="d-inline-flex form-control" id="user" placeholder="Usuario" required>
+                                    <div class="invalid-feedback">
+                                        Ingrese un usuario valido
+                                    </div>
+                                </div>
                         </div>
                         <div class="mb-3">
                             <label for="email">Correo Electrónico</label>
-							<div class="input-group-append">
-                                <span class="input-group-text justify-content-center"><i class="fa fa-envelope"></i></span>
-							    <input type="email" name="email" class="form-control" placeholder="Correo Electrónico" required>
+							<div class="d-flex form-group">
+                                <span class="flex-grow-1 input-group-text justify-content-center"><i class="fa fa-envelope"></i></span>
+                                <input type="email" name="email" class="form-control" placeholder="Correo Electrónico" required>
+                                <div class="invalid-feedback">
+                                        Ingrese un correo electrónico valido
+                                    </div>
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="pass">Contraseña</label>
-							<div class="input-group-append">
-                                <span class="input-group-text justify-content-center"><i class="fa fa-lock"></i></span>
-							    <input type="password" name="pass" class="form-control" placeholder="Contraseña" required>
+							<div class="d-flex form-group">
+                                <span class="flex-gow-1 input-group-text justify-content-center"><i class="fa fa-lock"></i></span>
+                                <input type="password" name="pass" class="form-control" placeholder="Contraseña" required>
+                                <div class="invalid-feedback">
+                                        Contraseña no valida
+                                    </div>
                             </div>
                             <small id="passwordHelpBlock" class="form-text text-muted">
-                                Your password must be 8-15 characters long.
+                                La contraseña debe contener entre 8-15 caractéres
                             </small>
 						</div>
 						<div class="mb-2">
                             <label for="cPass">Confirmar Contraseña</label>
-							<div class="input-group-append">
-                                <span class="input-group-text justify-content-center"><i class="fa fa-key"></i></span>
-							    <input type="password" name="cPass" class="form-control" placeholder="Confirmar Contraseña" required>
+							<div class="d-flex form-group">
+                                <span class="flex-grow-1 input-group-text justify-content-center"><i class="fa fa-key"></i></span>
+                                <input type="password" name="cPass" class="form-control" placeholder="Confirmar Contraseña" required>
+                                <div class="invalid-feedback">
+                                        La contraseña no coincide
+                                    </div>
                             </div>
 						</div>
 						<div class="form-group">
 							<div class="d-flex justify-content-center mt-3 login_container">
-                            <button type="submit" name="button" class="btn login_btn">Sign In</button>
+                            <button type="submit" name="button" class="btn login_btn">Sign Up</button>
                         </div>
                         <div class="mt-3">
                             <div class="d-flex justify-content-center links">
